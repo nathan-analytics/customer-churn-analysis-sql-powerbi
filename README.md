@@ -1,20 +1,18 @@
-## Telco Churn Rate Analysis
-SQL + Power BI analysis of the Teleco Customer Churn Rate (~7K Total Customers)
+## Telco Customer Churn Analysis
+SQL + Power BI analysis of a telecom customer churn dataset containing 7,043 customers.
 
 Dashboard Preview
 <img width="1314" height="709" alt="churn_rate_powerbi" src="https://github.com/user-attachments/assets/5125722b-5dd4-4666-a3d1-7654e808259c" />
 
 ## Project Overview
-This project analyst the Customer Churn rate dataset with 7,043 customers from Telco a US-based communication provider. The goal was to simulate a real-world analytics workflow by cleaning raw transcations data in SQL and building an interactive Power BI dashboard to explore the churn-rate of Telco's customers based on their contract, their tenure, and payment methods.
+This project analyzes customer churn data from a telecom company to identify the main factors associated with customer loss. The goal was to simulate a real-world analytics workflow by cleaning raw data in SQL and building a Power BI dashboard to explore churn by contract type, customer tenure, and payment method.
 
-The analysis involved creating a cleaning churn rate data, building analytical SQL views, and visualizing key metrics such as churn rate by contract, tenure and payment methods.
-
-The final dashboard highlights key KPIs, churn rates by contract duration, customer tenure and payment methods. Providing insight that could help support promoting retention rates and customer experience.
+The analysis included cleaning and transforming the raw dataset, creating SQL queries and views for reporting, and visualizing key churn metrics in Power BI. The final dashboard highlights overall churn, churn by contract type, churn by customer tenure, and churn by payment method to support retention-focused business decisions.
 
 ## Business Questions
  - What contracts generate the most churn?
- - What customer tenure generate the most churn?
- - What payment methods create the most churn?
+ - What customer tenure groups generate the most churn?
+ - What payment methods generate the most churn?
 
 ## Tools Used
  - PostgreSQL
