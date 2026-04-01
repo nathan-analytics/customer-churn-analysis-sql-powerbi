@@ -20,7 +20,7 @@ This project analyzes customer churn data from a telecom company to identify the
 The analysis included cleaning and transforming the raw dataset, creating SQL queries and views for reporting, and visualizing key churn metrics in Power BI. The final dashboard highlights overall churn, churn by contract type, churn by customer tenure, and churn by payment method to support retention-focused business decisions.
 
 ## Business Questions
- - What contract types have the hughest churn?
+ - What contract types have the highest churn?
  - What customer tenure groups experience the most churn?
  - What payment methods are associated with the highest churn?
 
