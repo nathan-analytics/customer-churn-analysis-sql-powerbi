@@ -1,90 +1,104 @@
-# Telco Customer Churn Analysis  
-SQL + Power BI  
+# Telco Customer Churn Analysis
 
-Analyzed 7,043 telecom customers to identify key drivers of churn and opportunities to improve retention.
+Analyzed 7,043 telecom customers using SQL and Power BI to identify key drivers of churn and improve customer retention.
 
----
+## Project Summary
 
-## Dashboard Preview  
-<img width="1314" height="709" alt="churn_rate_powerbi" src="https://github.com/user-attachments/assets/ca92515c-bb0d-47ff-88c8-fa03b2c00693" />
+Evaluated customer behavior to understand why customers churn and what factors increase retention.
 
----
+Key findings:
+- Overall churn rate is 26.54% (1,869 customers)
+- Month-to-month contracts have the highest churn (~42.7%)
+- First-year customers are the highest-risk group (~48% churn)
+- Electronic check users churn the most (~45%)
+- Long-term contracts and auto-pay significantly reduce churn
 
-## 📄 Case Study  
-[customer churn analysis.pdf](https://github.com/user-attachments/files/26418184/customer.churn.analysis.pdf)
+Business impact:
+- Identifies high-risk customer segments for targeted retention strategies
+- Highlights contract structure as a major driver of churn
+- Supports improving onboarding to reduce early customer loss
+- Provides actionable insights to improve long-term customer value
 
----
+## Dashboard Preview
 
-## Key Insights  
-• Overall churn rate is 26.54% (1,869 customers)  
-• Month-to-month contracts have the highest churn (~42.7%)  
-• First-year customers have the highest churn (~48%)  
-• Electronic check users churn the most (~45%)  
-• Long-term contracts and auto-pay significantly reduce churn  
+![Churn Dashboard](https://github.com/user-attachments/assets/ca92515c-bb0d-47ff-88c8-fa03b2c00693)
 
----
+## Case Study
 
-## Business Questions  
-• What contract types have the highest churn?  
-• What customer tenure groups experience the most churn?  
-• What payment methods are associated with the highest churn?  
+[Customer Churn Analysis Case Study](case_study.pdf)
 
----
+## Key Insights
 
-## Project Overview  
-This project analyzes telecom customer data to identify the main factors driving churn.
+- Contract type is the strongest predictor of churn
+- Early-tenure customers are significantly more likely to leave
+- Payment method impacts retention, with manual methods increasing churn risk
+- Retention improves as customer tenure increases
 
-The workflow simulates a real-world analytics process:
-• Cleaned and transformed raw data using SQL  
-• Created analytical tables and views for reporting  
-• Built a Power BI dashboard to explore churn patterns  
+## Project Overview
 
-The final output highlights how contract type, tenure, and payment behavior impact customer retention.
+This project simulates a real-world churn analysis workflow using customer-level telecom data.
 
----
+Workflow:
+- Cleaned and transformed raw data using SQL
+- Created derived fields and analytical tables
+- Built SQL views for structured analysis
+- Developed a Power BI dashboard to visualize churn patterns
 
-## Tools Used  
-SQL (PostgreSQL), Power BI  
+## Data Cleaning
 
----
+- Renamed columns to snake_case for consistency
+- Cleaned and converted total_charges to numeric
+- Handled missing values using NULL logic
+- Created churn_flag (1 = churn, 0 = retained)
+- Built a clean analytical table (churn_clean)
 
-## Dataset  
+## SQL Analysis
+
+Created queries and views to analyze churn behavior:
+- Overall churn KPIs
+- Contract type churn comparison
+- Customer tenure analysis
+- Payment method churn patterns
+
+## Dashboard Features
+
+- Overall churn rate KPI
+- Churn breakdown by contract type
+- Churn by tenure groups
+- Payment method analysis
+- Customer segmentation insights
+
+## Business Recommendations
+
+- Promote longer-term contracts to reduce churn risk
+- Improve onboarding for first-year customers to increase retention
+- Encourage automatic payment methods to reduce churn associated with manual payments
+- Monitor high-risk segments for targeted retention efforts
+
+## Tools Used
+
+- SQL (PostgreSQL)
+- Power BI
+
+## Dataset
+
 Customer churn dataset (~7,043 customers)
 
 Key fields:
-contract, tenure, payment_method, monthly_charges, internet_service, tech_support, online_security  
+- contract
+- tenure
+- payment_method
+- monthly_charges
+- internet_service
+- tech_support
+- online_security
 
----
+## Project Structure
 
-## Data Cleaning  
-• Renamed columns to snake_case for consistency  
-• Cleaned total_charges field and converted to numeric  
-• Handled missing values using NULL logic  
-• Created churn_flag (1 = churn, 0 = retained)  
-• Built a clean analytical table (churn_clean)  
-
----
-
-## SQL Analysis  
-Created queries and views to analyze churn behavior:
-• Overall churn KPIs  
-• Contract type churn comparison  
-• Customer tenure analysis  
-• Payment method churn patterns  
-
----
-
-## Business Recommendations  
-• Promote longer-term contracts to reduce churn  
-• Improve onboarding experience for first-year customers  
-• Encourage automatic payment methods to improve retention  
-
----
-
-## Project Structure  
-01_data_raw/ – Raw dataset  
-02_sql/ – SQL scripts  
-03_powerbi/ – Dashboard file  
-04_screenshots/ – Dashboard images  
-case_study.pdf – Project summary  
-README.md – Documentation  
+customer-churn-analysis/  
+├── 01_data_raw/  
+├── 02_sql/  
+├── 03_powerbi/  
+├── 04_screenshots/  
+├── case_study.pdf  
+└── README.md
