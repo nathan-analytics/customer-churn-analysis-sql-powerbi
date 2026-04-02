@@ -19,7 +19,10 @@ Business impact:
 - Supports improving onboarding to reduce early customer loss
 - Provides actionable insights to improve long-term customer value
 
-## Dashboard Preview
+## Dashboard Highlight
+
+Month-to-month customers show significantly higher churn (~43%), 
+making contract structure the most critical driver of customer retention.
 
 ![Churn Dashboard](https://github.com/user-attachments/assets/ca92515c-bb0d-47ff-88c8-fa03b2c00693)
 
