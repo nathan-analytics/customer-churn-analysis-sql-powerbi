@@ -28,7 +28,7 @@ making contract structure the most critical driver of customer retention.
 
 ## Case Study
 
-[Customer Churn Analysis Case Study](case_study.pdf)
+[Customer Churn Analysis Case Study.pdf](https://github.com/user-attachments/files/26452052/Customer.Churn.Analysis.Case.Study.pdf)
 
 ## Key Insights
 
