@@ -4,7 +4,7 @@ Analysis of telecom customer data to identify churn drivers and high-risk custom
 
 ---
 
-## Project Summary (30 seconds)
+## Project Summary
 
 Analyzed ~7,000 telecom customers to identify which customers are most likely to churn and why.
 
