@@ -1,6 +1,6 @@
 # Customer Churn Analysis
 
-Analysis of telecom customer data to identify churn drivers and high-risk customer segments.
+Analyzed ~7,000 telecom customers to identify high-risk churn segments and key drivers of customer retention.
 
 ---
 
@@ -107,6 +107,14 @@ customer-churn-analysis/
 - Strong SQL data transformation skills  
 - Ability to identify business risk and retention opportunities  
 - Translating data into actionable strategies  
+
+---
+
+## Business Recommendations
+
+- Encourage long-term contracts to reduce churn risk
+- Improve onboarding experience for first-year customers
+- Promote auto-pay adoption to reduce churn associated with payment friction
 
 ---
 
