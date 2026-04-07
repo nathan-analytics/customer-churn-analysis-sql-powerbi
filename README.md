@@ -1,103 +1,95 @@
-# Telco Customer Churn Analysis
+# Customer Churn Analysis
 
-Analyzed 7,043 telecom customers using SQL and Power BI to identify key drivers of churn and improve customer retention.
+Analysis of telecom customer data to identify churn drivers and high-risk customer segments.
 
-## Project Summary
+---
 
-Evaluated customer behavior to understand why customers churn and what factors increase retention.
+## Project Summary (30 seconds)
 
-Key findings:
-- Overall churn rate is 26.54% (1,869 customers)
-- Month-to-month contracts have the highest churn (~42.7%)
-- First-year customers are the highest-risk group (~48% churn)
-- Electronic check users churn the most (~45%)
-- Long-term contracts and auto-pay significantly reduce churn
+Analyzed ~7,000 telecom customers to identify which customers are most likely to churn and why.
 
-Business impact:
-- Identifies high-risk customer segments for targeted retention strategies
-- Highlights contract structure as a major driver of churn
-- Supports improving onboarding to reduce early customer loss
-- Provides actionable insights to improve long-term customer value
+Used SQL to clean and transform the dataset, created a churn flag for analysis, and built a Power BI dashboard to segment churn by contract type, tenure, and payment method.
 
-## Dashboard Highlight
+Key findings showed that month-to-month customers have ~43% churn, early-tenure customers are the highest risk, and electronic check users churn at the highest rate.
 
-Month-to-month customers show significantly higher churn (~43%), 
-making contract structure the most critical driver of customer retention.
+This project demonstrates how data can be used to identify risk segments and inform retention strategies.
 
-![Churn Dashboard](https://github.com/user-attachments/assets/ca92515c-bb0d-47ff-88c8-fa03b2c00693)
+---
+
+## Dashboard Preview
+
+**Churn Overview**  
+<img width="1314" height="709" alt="churn_rate_powerbi" src="https://github.com/user-attachments/assets/594e727e-75e3-49ac-a2db-6f820082b76a" />
+
+---
 
 ## Case Study
 
-[Customer Churn Analysis Case Study.pdf](https://github.com/user-attachments/files/26452052/Customer.Churn.Analysis.Case.Study.pdf)
+Full breakdown of the business problem, methodology, and recommendations:
+
+[customer churn analysis.pdf](https://github.com/user-attachments/files/26551235/customer.churn.analysis.pdf)
+
+---
 
 ## Key Insights
 
-- Contract type is the strongest predictor of churn
-- Early-tenure customers are significantly more likely to leave
-- Payment method impacts retention, with manual methods increasing churn risk
-- Retention improves as customer tenure increases
+- Month-to-month contracts have ~43% churn rate  
+- Customers in their first year have the highest churn risk  
+- Electronic check users show the highest churn levels  
+- Long-term contracts significantly reduce churn  
+- Churn is driven by customer lifecycle and payment behavior  
 
-## Project Overview
+---
 
-This project simulates a real-world churn analysis workflow using customer-level telecom data.
+## Business Problem
 
-Workflow:
-- Cleaned and transformed raw data using SQL
-- Created derived fields and analytical tables
-- Built SQL views for structured analysis
-- Developed a Power BI dashboard to visualize churn patterns
+Customer churn directly impacts revenue and growth. Without understanding why customers leave, companies struggle to:
 
-## Data Cleaning
+- Retain high-value customers  
+- Reduce revenue loss  
+- Improve long-term customer relationships  
 
-- Renamed columns to snake_case for consistency
-- Cleaned and converted total_charges to numeric
-- Handled missing values using NULL logic
-- Created churn_flag (1 = churn, 0 = retained)
-- Built a clean analytical table (churn_clean)
+This project identifies key churn drivers and highlights actionable retention opportunities.
 
-## SQL Analysis
+---
 
-Created queries and views to analyze churn behavior:
-- Overall churn KPIs
-- Contract type churn comparison
-- Customer tenure analysis
-- Payment method churn patterns
+## Business Impact
 
-## Dashboard Features
+- Encourage long-term contracts to reduce churn  
+- Improve onboarding experience for new customers  
+- Promote auto-pay options to increase retention  
+- Target high-risk segments with retention campaigns  
 
-- Overall churn rate KPI
-- Churn breakdown by contract type
-- Churn by tenure groups
-- Payment method analysis
-- Customer segmentation insights
+---
 
-## Business Recommendations
+## Methodology
 
-- Promote longer-term contracts to reduce churn risk
-- Improve onboarding for first-year customers to increase retention
-- Encourage automatic payment methods to reduce churn associated with manual payments
-- Monitor high-risk segments for targeted retention efforts
+### Data Cleaning & Preparation
+- Cleaned and transformed raw customer data in PostgreSQL  
+- Handled missing values and standardized data types  
+- Created `churn_flag` for easier analysis  
 
-## Tools Used
+### Analysis & Segmentation
+- Segmented churn by contract type, tenure, and payment method  
+- Calculated churn rates across key customer groups  
+- Identified high-risk segments and behavioral patterns  
 
-- SQL (PostgreSQL)
-- Power BI
+### Visualization
+- Built Power BI dashboard to highlight churn drivers  
+- Designed visuals for quick stakeholder understanding  
 
-## Dataset
+---
 
-Customer churn dataset (~7,043 customers)
+## Tech Stack
 
-Key fields:
-- contract
-- tenure
-- payment_method
-- monthly_charges
-- internet_service
-- tech_support
-- online_security
+- PostgreSQL (data cleaning, transformation, analysis)  
+- Power BI (dashboard development and visualization)  
+
+---
 
 ## Project Structure
 
+```
 customer-churn-analysis/  
 ├── 01_data_raw/  
 ├── 02_sql/  
@@ -105,3 +97,19 @@ customer-churn-analysis/
 ├── 04_screenshots/  
 ├── case_study.pdf  
 └── README.md
+```
+
+---
+
+## What This Project Demonstrates
+
+- Customer segmentation and behavioral analysis  
+- Strong SQL data transformation skills  
+- Ability to identify business risk and retention opportunities  
+- Translating data into actionable strategies  
+
+---
+
+## Key Takeaway
+
+Churn is highest among short-term and early-stage customers, making retention strategies critical during the first year of the customer lifecycle.
