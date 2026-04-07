@@ -62,6 +62,15 @@ This project identifies key churn drivers and highlights actionable retention op
 
 ---
 
+## Data Pipeline
+
+Raw Data (Customer Dataset)  
+→ PostgreSQL (Data Cleaning and Feature Creation)  
+→ SQL (Churn Analysis and Segmentation)  
+→ Power BI (Dashboard and Visualization)
+
+---
+
 ## Methodology
 
 ### Data Cleaning & Preparation
