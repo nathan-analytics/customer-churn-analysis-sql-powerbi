@@ -96,6 +96,15 @@ Raw Data (Customer Dataset)
 
 ---
 
+## SQL Work
+
+- Cleaned and transformed customer dataset for analysis
+- Created churn_flag to simplify KPI calculations
+- Aggregated churn rates by contract type, tenure, and payment method
+- Built views to support dashboard segmentation and reporting
+
+---
+
 ## Project Structure
 
 ```
