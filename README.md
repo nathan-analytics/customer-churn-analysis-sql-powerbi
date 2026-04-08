@@ -1,18 +1,16 @@
 # Customer Churn Analysis
 
-Analyzed ~7,000 telecom customers to identify high-risk churn segments and key drivers of customer retention.
+Analysis of ~7,000 telecom customers to identify churn drivers and high-risk segments.
 
 ---
 
 ## Project Summary
 
-Analyzed ~7,000 telecom customers to identify which customers are most likely to churn and why.
+Analyzed ~7K customers using SQL and Power BI to identify which customers churn and why.
 
-Used SQL to clean and transform the dataset, created a churn flag for analysis, and built a Power BI dashboard to segment churn by contract type, tenure, and payment method.
+Cleaned and transformed data in PostgreSQL, handled missing values, and created a churn_flag to support analysis.
 
-Key findings showed that month-to-month customers have ~43% churn, early-tenure customers are the highest risk, and electronic check users churn at the highest rate.
-
-This project demonstrates how data can be used to identify risk segments and inform retention strategies.
+Built SQL queries and a dashboard to segment churn by contract type, tenure, and payment method.
 
 ---
 
@@ -37,7 +35,9 @@ Full breakdown of the business problem, methodology, and recommendations:
 - Customers in their first year have the highest churn risk  
 - Electronic check users show the highest churn levels  
 - Long-term contracts significantly reduce churn  
-- Churn is driven by customer lifecycle and payment behavior  
+- Churn is driven by customer lifecycle and payment behavior
+
+These results highlight clear opportunities to reduce churn through contract strategy, onboarding improvements, and payment optimization.
 
 ---
 
@@ -129,4 +129,4 @@ customer-churn-analysis/
 
 ## Key Takeaway
 
-Churn is highest among short-term and early-stage customers, making retention strategies critical during the first year of the customer lifecycle.
+Churn is concentrated in early-stage and short-term customers, making retention efforts in the first year the highest-impact lever for reducing revenue loss.
